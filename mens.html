@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Page</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        #price{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        #container>div>h2+p{
+            font-size: 19;
+            font-weight: lighter;
+            color: grey;
+            margin-bottom: -10px;
+            margin-top: -10px;
+        }
+        #price>p:nth-child(1){
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        #price>p:nth-child(3){
+            color: teal;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22sG6aZoK0Y1LzrTCKBAMAdO2ywd3zDsmboiziLd-K8q5iJHPP1y3IszktgIKpsgkISg&usqp=CAU" alt="">
+            <h2>Pause</h2>
+            <p>Mens Cotton Long Sleeves Shrug</p>
+           <div id="price">
+            <p>&#8377 359</p>
+            <p>&#8377 <s>1499</s></p>
+            <p>-76%</p>
+           </div>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22sG6aZoK0Y1LzrTCKBAMAdO2ywd3zDsmboiziLd-K8q5iJHPP1y3IszktgIKpsgkISg&usqp=CAU" alt="">
+            <h2>JUBINATION</h2>
+            <p>Mens Cotton Long Sleeves Shrug</p>
+           <div id="price">
+            <p>&#8377 359</p>
+            <p>&#8377 <s>1499</s></p>
+            <p>-46%</p>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
